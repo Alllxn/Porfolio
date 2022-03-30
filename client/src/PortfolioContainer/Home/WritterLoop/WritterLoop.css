@@ -1,0 +1,5 @@
+#WritterLoop{
+    color: var(--blanco);
+    border-top: solid var(--primario) 5px;
+    padding-top: 20px;
+}

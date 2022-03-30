@@ -1,0 +1,57 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(5,7, 12, 0.45), rgba(5,7, 12, 0.45)), 
+            url('../../assets/home/background-home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* .home-container #home-section{
+} */
+
+.home-container #home-section #presentation-content{
+    display: flex;
+    /* background-co; */
+    /* background-color: rgba(5,7, 12, 0.45);
+    padding: 20px 20px 0 20px;    
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0); */
+}
+
+.home-container #home-section #presentation-content-image{
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 50px;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+}
+
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.home-container #home-section #presentation-content-text{
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.home-container #home-section #presentation-image{
+    width: 400px;
+}
+
+.home-container #home-section h1{
+    color: var(--blanco);
+    margin-bottom: 20px;
+}
