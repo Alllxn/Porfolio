@@ -18,3 +18,25 @@
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE
 }
+
+.magic_underline{
+  position: relative;
+}
+
+.magic_underline::after{
+  content: "";
+  height: 5px;
+  background: linear-gradient(125deg, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d);
+  background-size: 1800% 1800%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 1s;
+  animation: rainbow 4s ease infinite;
+}
+
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}

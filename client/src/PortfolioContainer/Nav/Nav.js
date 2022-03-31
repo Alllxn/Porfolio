@@ -12,8 +12,8 @@ export default function Nav() {
     return (
         <div id='nav-container'>
             <div id='nav-izquierda' className='parte-nav'>
-                <a href='' id='enlace-home'>
-                    <img id='imagen-nav' src={extraterrestre}></img>
+                <a href='.' id='enlace-home'>
+                    <img id='imagen-nav' src={extraterrestre} alt='alien-cabecera'></img>
                     <div>
                         <p>Allan Espinoza</p>
                         <p>Web Developer</p>
@@ -23,21 +23,22 @@ export default function Nav() {
             <div id='nav-derecha' className='parte-nav'>
                 <ul>
                     <li>
-                        <a href=''>
+                        <a href='#home-section'>
                             <FontAwesomeIcon icon={faHouseUser}/>
-                            <span>Home</span>
+                            <span className='magic_underline'>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href=''>
+                        <a href='#home-section'>
                             <FontAwesomeIcon icon={faHistory}/>
-                            <span>Work</span>
+                            <span className='magic_underline'>Work</span>
                         </a>
                     </li>
                     <li>
-                        <a href=''>
+                        <a href='#home-section'>
                         {/* <FontAwesomeIcon icon="fa-solid fa-message-code" /> */}
-                            <span>Contact</span>
+                            <FontAwesomeIcon icon={faMessage}/>
+                            <span className='magic_underline'>Contact</span>
                         </a>
                     </li>
                 </ul>
