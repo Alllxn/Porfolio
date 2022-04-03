@@ -7,11 +7,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
 import { faHistory } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faMessage } from '@fortawesome/free-solid-svg-icons';
 
 export default function Nav() {
     return (
         <div id='nav-container'>
-            <div id='nav-izquierda' className='parte-nav'>
+            <button id='nav-drawer'>
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+            <div id='nav-left' className='part-nav'>
                 <a href='.' id='enlace-home'>
                     <img id='imagen-nav' src={extraterrestre} alt='alien-cabecera'></img>
                     <div>
@@ -20,11 +25,12 @@ export default function Nav() {
                     </div>
                 </a>
             </div>
-            <div id='nav-derecha' className='parte-nav'>
+            <div id='nav-right' className='part-nav'>
                 <ul>
                     <li>
                         <a href='#home-section'>
                             <FontAwesomeIcon icon={faHouseUser}/>
+                            {/* <FontAwesomeIcon icon="fa-solid fa-bars" /> */}
                             <span className='magic_underline'>Home</span>
                         </a>
                     </li>
