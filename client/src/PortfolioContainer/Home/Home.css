@@ -1,18 +1,101 @@
- .home-container{
+ #home-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
+    min-height: 700px;
     max-height: 914px;
     background: linear-gradient(rgba(5,7, 12, 0.45), rgba(5,7, 12, 0.45)), 
             url('../../assets/home/background-home.jpg') no-repeat;
-            padding-top: 160px;
+    padding-top: 100px;
     background-size: cover;
     background-position: center;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 100%; */
 }
+
+#home-container #home-section #presentation-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#home-container #home-section #presentation-content #presentation-content-image{
+    border-radius: 100%;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 20px;
+} 
+
+#home-container #home-section #presentation-content #presentation-content-image #presentation-image{
+    width: 250px;
+}
+
+#home-container #home-section #presentation-content #presentation-content-text{
+    /* min-width: 400px;
+    max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+} 
+
+#home-container #home-section #presentation-content #presentation-content-text h1{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+#home-container #home-section #presentation-content #presentation-content-text h1::after{
+    width: 100%;
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+#home-container #home-section #presentation-content #presentation-content-text div#WritterLoop{
+    color: var(--blanco);
+    padding-top: 20px;
+    max-width: 250px;
+    max-height: 60px;
+    min-height: 60px;
+    text-align: center;
+}
+
+#home-container #home-section #presentation-content #presentation-content-text div#WritterLoop span{
+    font-size: 1.4rem;
+}
+
+#home-container #home-section #presentation-content-image,
+#home-container #home-section #presentation-content-text h1::after{
+    background: linear-gradient(125deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 5000px 5000px;
+    animation: rainbow 18s ease infinite;
+}
+
+@media only screen and (min-width: 600px) {
+    #home-container #home-section #presentation-content{
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 .home-container #home-section #presentation-content{
@@ -42,9 +125,6 @@
     padding-right: 40px;
 } */
 
-.home-container #home-section #presentation-image{
-    width: 100px;
-}
 
 /* .home-container #home-section #presentation-content-text h1{
     color: var(--blanco);
