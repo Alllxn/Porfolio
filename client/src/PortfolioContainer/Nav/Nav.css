@@ -1,16 +1,12 @@
 #nav-container{
-    display: flex;
+    background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
     position: fixed;
     top: 0;
-    background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
     width: 100%;
-    height: 100px;
     z-index: 1;
-    align-items: center;
-    /* padding: 20px 0; */
 }
 
-#nav-container::after{    
+#nav-container:after{    
     background: linear-gradient(rgba(5,7, 12, 0.4), rgba(5,7, 12, 0.25), rgba(5,7, 12, 0.05), rgba(5,7, 12, 0));
     width: 100%;
     content: "";
@@ -19,49 +15,149 @@
     height: 50px;
 }
 
-#nav-container #nav-drawer {
-    background-color: none;
-    border: none;
-    width: 50px;
-    height: 50px;
-}
-
-
-#nav-container #nav-left.part-nav{
-    width: 100%;
-    height: 70%;
-}
-
-#nav-container #nav-left.part-nav #enlace-home{
+#nav-container #nav{
+    padding-top: 10px;
     display: flex;
-    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
-#nav-container #nav-left.part-nav #enlace-home #imagen-nav{
+#nav-container #nav #nav-drawer {
+    background-color: transparent;
+    border: none;
+    width: 75px;
     height: 100%;
-    margin-right: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-container #nav .part-nav{
+    margin-top: 10px;
+}
+
+#nav-container #nav #nav-left.part-nav{
+    width: 100%;
+    height: 100%;
+    max-width: fit-content;
+    /* margin-left: 10px; */
+    /* flex-basis: 80%; */
+}
+
+#nav-container #nav #nav-left.part-nav #enlace-home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+#nav-container #nav #nav-left.part-nav #enlace-home #imagen-nav{
+    height: 55%;
     transition: transform 1s;
+    margin-right: 5px;
 }
 
-
-#nav-container #nav-left.part-nav:hover #enlace-home #imagen-nav{
+#nav-container #nav #nav-left.part-nav:hover #enlace-home #imagen-nav{
     transform: rotate(360deg);
 }
 
-#nav-container #nav-right.part-nav{
-    background-color: white;
+#nav-container #nav #nav-left.part-nav #enlace-home div p{
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav-container #nav #nav-right.part-nav{
+    margin-right: 10px;
+    /* flex-basis: 20%; */
+    background-color: red;
     width: 250px;
     height: 100vh;
     position: absolute;
     left: -250px;
-    top: 0;
+    /* left: 0; */
+    top: -10px;
     z-index: 2;
 }
 
-#nav-container #nav-right.part-nav ul{
-    list-style-type: none;
+#nav-container #nav #nav-right.part-nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-container #nav #nav-right.part-nav ul li{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.4rem;
+}
+
+#nav-container #nav #nav-right.part-nav ul li > a{
+    text-decoration: none;
+    transition: 3s;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#nav-container #nav #nav-right.part-nav ul li > a span{
+    position: relative;
+}
+
+#nav-container #nav #nav-right.part-nav ul li > a span::after{
+    width: 0%;
+}
+
+#nav-container #nav #nav-right.part-nav ul li > a:hover span:last-child::after{
     width: 100%;
 }
+
+#nav-container #nav #nav-right.part-nav ul li > a > svg{
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    #nav-container #nav{
+        justify-content: space-between;
+    }
+
+    #nav-container #nav #nav-right.part-nav ul{
+        flex-direction: row;
+    }
+
+    #nav-container #nav #nav-drawer {
+        display: none;
+    }
+
+    #nav-container #nav #nav-right.part-nav{
+        background-color: transparent;
+        width: initial;
+        height: initial;
+        position: initial;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    #nav-container #nav #nav-left.part-nav{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
 
 /* .svg_primario{
     fill: var(--secundario);
@@ -71,13 +167,13 @@
     fill: var(--primario);
 }
 
-#nav-container a{
+#nav-container #nav a{
     color: var(--blanco);
     transition: 0.5s;
     position: relative;
 }
 
-#nav-container{
+#nav-container #nav{
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -87,7 +183,7 @@
     background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
 }
 
-#nav-container::after{    
+#nav-container #nav::after{    
     background: linear-gradient(rgba(5,7, 12, 0.4), rgba(5,7, 12, 0.25), rgba(5,7, 12, 0.05), rgba(5,7, 12, 0));
     width: 100%;
     content: "";
@@ -96,7 +192,7 @@
     height: 50px;
 }
 
-#nav-container .parte-nav{
+#nav-container #nav .parte-nav{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -104,14 +200,14 @@
     height: 100px;
 }
 
-#nav-container #nav-derecha ul{
+#nav-container #nav #nav-derecha ul{
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#nav-container #nav-derecha ul > li{
+#nav-container #nav #nav-derecha ul > li{
     display: flex;
     height: 100%;
     align-items: center;
@@ -119,54 +215,54 @@
     font-size: 1.4rem;
 }
 
-#nav-container #nav-derecha ul > li > a{
+#nav-container #nav #nav-derecha ul > li > a{
     text-decoration: none;
     transition: 3s;
 }
 
-#nav-container #nav-derecha ul > li > a span{
+#nav-container #nav #nav-derecha ul > li > a span{
     position: relative;
 }
 
-#nav-container #nav-derecha ul > li > a span::after{
+#nav-container #nav #nav-derecha ul > li > a span::after{
     width: 0%;
 }
 
-#nav-container #nav-derecha ul > li > a:hover span::after{
+#nav-container #nav #nav-derecha ul > li > a:hover span::after{
     width: 100%;
 }
 
-#nav-container #nav-derecha ul > li > a > svg{
+#nav-container #nav #nav-derecha ul > li > a > svg{
     margin-right: 5px;
 }
-#nav-container #nav-izquierda #enlace-home{
+#nav-container #nav #nav-izquierda #enlace-home{
     display: flex;
 }
 
-#nav-container #nav-izquierda #enlace-home #imagen-nav{
+#nav-container #nav #nav-izquierda #enlace-home #imagen-nav{
     height: 100%;
     margin-right: 12px;
     transition: transform 1s;
 }
 
-#nav-container #nav-izquierda #enlace-home:hover #imagen-nav{
+#nav-container #nav #nav-izquierda #enlace-home:hover #imagen-nav{
     transform: rotate(360deg);
 }
 
-#nav-container #nav-izquierda #enlace-home div{
+#nav-container #nav #nav-izquierda #enlace-home div{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#nav-container #nav-izquierda #enlace-home div p{
+#nav-container #nav #nav-izquierda #enlace-home div p{
     margin: 0;
 }
 
-#nav-container #nav-izquierda #enlace-home div p:first-child{
+#nav-container #nav #nav-izquierda #enlace-home div p:first-child{
     font-size: 1.6rem;
 }
 
-#nav-container #nav-izquierda #enlace-home div p:nth-child(2){
+#nav-container #nav #nav-izquierda #enlace-home div p:nth-child(2){
     font-size: 1.3rem;
 } */
