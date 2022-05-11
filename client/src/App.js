@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Nav />
       <Home />
+      {/* <p>gola</p> */}
     </div>
   );
 }
