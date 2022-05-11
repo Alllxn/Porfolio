@@ -12,13 +12,13 @@
     padding-top: 100px;
     background-size: cover;
     background-position: center;
+    padding: 0 20px;
 }
 
 #home-container #home-section #presentation-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
 }
 
 #home-container #home-section #presentation-content #presentation-content-image{
@@ -79,6 +79,19 @@
 @media only screen and (min-width: 600px) {
     #home-container #home-section #presentation-content{
         flex-direction: row;
+    }
+    
+    #home-container #home-section #presentation-content #presentation-content-image{
+        margin-bottom: 0;
+    } 
+    
+    #home-container #home-section #presentation-content #presentation-content-text{
+        margin-left: 20px;
+        align-items: flex-start;
+    } 
+
+    #home-container #home-section #presentation-content #presentation-content-text div#WritterLoop{
+        text-align: left;
     }
 }
 
