@@ -5,7 +5,7 @@ import './WritterLoop.css'
 export default class WritterLoop extends React.Component { // 
     render() {
       return (
-        <h2 id='WritterLoop'>
+        <div id='WritterLoop'>
             <span>I'm </span>
             {" "}
             <Typical
@@ -19,14 +19,19 @@ export default class WritterLoop extends React.Component { //
                     1500, 
                     "Back End Developer⚙️",
                     1500,
-                    "the curiosity Personified🍀",
+                    "the curiosity personified🍀",
                     1500,
                     "problem solver🚀",
                     1500 
                 ]}
+                
+                // steps={[
+                //   "the curiosity Personified🍀",
+                //   1500
+                // ]}
                 wrapper="span"
             />             
-        </h2>
+        </div>
       );
     }
   } 
