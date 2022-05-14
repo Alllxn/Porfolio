@@ -1,9 +1,12 @@
+.open-nav{
+    left: 0 !important;
+}
+
 #nav-container{
     background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
 }
 
 #nav-container:after{    
@@ -13,10 +16,10 @@
     position: absolute;
     top: 100px;
     height: 50px;
+    z-index: 2;
 }
 
-#nav-container #nav{
-    padding-top: 10px;
+#nav-container #nav-section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -27,7 +30,7 @@
     margin: 0 auto;
 }
 
-#nav-container #nav #nav-drawer {
+#nav-container #nav-section #nav-drawer {
     background-color: transparent;
     border: none;
     width: 75px;
@@ -38,11 +41,11 @@
     align-items: center;
 }
 
-#nav-container #nav .part-nav{
+#nav-container #nav-section .part-nav{
     margin-top: 10px;
 }
 
-#nav-container #nav #nav-left.part-nav{
+#nav-container #nav-section #nav-left.part-nav{
     width: 100%;
     height: 100%;
     max-width: fit-content;
@@ -50,43 +53,41 @@
     /* flex-basis: 80%; */
 }
 
-#nav-container #nav #nav-left.part-nav #enlace-home{
+#nav-container #nav-section #nav-left.part-nav #enlace-home{
     display: flex;
     align-items: center;
     height: 100%;
     text-decoration: none;
 }
 
-#nav-container #nav #nav-left.part-nav #enlace-home #imagen-nav{
+#nav-container #nav-section #nav-left.part-nav #enlace-home #imagen-nav{
     height: 55%;
     transition: transform 1s;
     margin-right: 5px;
 }
 
-#nav-container #nav #nav-left.part-nav:hover #enlace-home #imagen-nav{
+#nav-container #nav-section #nav-left.part-nav:hover #enlace-home #imagen-nav{
     transform: rotate(360deg);
 }
 
-#nav-container #nav #nav-left.part-nav #enlace-home div p{
+#nav-container #nav-section #nav-left.part-nav #enlace-home div p{
     margin: 0;
     color: white;
     font-size: 1.2rem;
 }
 
-#nav-container #nav #nav-right.part-nav{
+#nav-container #nav-section #nav-right.part-nav{
     margin-right: 10px;
-    /* flex-basis: 20%; */
-    background-color: red;
+    background: linear-gradient(to right, rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
     width: 250px;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     left: -250px;
-    /* left: 0; */
-    top: -10px;
-    z-index: 2;
+    top: 100px;
+    z-index: 1;
 }
 
-#nav-container #nav #nav-right.part-nav ul{
+#nav-container #nav-section #nav-right.part-nav ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -94,7 +95,7 @@
     margin: 0;
 }
 
-#nav-container #nav #nav-right.part-nav ul li{
+#nav-container #nav-section #nav-right.part-nav ul li{
     display: flex;
     height: 100%;
     align-items: center;
@@ -102,7 +103,7 @@
     font-size: 1.4rem;
 }
 
-#nav-container #nav #nav-right.part-nav ul li > a{
+#nav-container #nav-section #nav-right.part-nav ul li > a{
     text-decoration: none;
     transition: 3s;
     display: flex;
@@ -110,46 +111,46 @@
     color: white;
 }
 
-#nav-container #nav #nav-right.part-nav ul li > a span{
+#nav-container #nav-section #nav-right.part-nav ul li > a span{
     position: relative;
 }
 
-#nav-container #nav #nav-right.part-nav ul li > a span::after{
+#nav-container #nav-section #nav-right.part-nav ul li > a span::after{
     width: 0%;
 }
 
-#nav-container #nav #nav-right.part-nav ul li > a:hover span:last-child::after{
+#nav-container #nav-section #nav-right.part-nav ul li > a:hover span:last-child::after{
     width: 100%;
 }
 
-#nav-container #nav #nav-right.part-nav ul li > a > svg{
+#nav-container #nav-section #nav-right.part-nav ul li > a > svg{
     margin-right: 5px;
 }
 
 @media only screen and (min-width: 600px) {
-    #nav-container #nav{
+    #nav-container #nav-section{
         justify-content: space-between;
     }
 
-    #nav-container #nav #nav-right.part-nav ul{
+    #nav-container #nav-section #nav-right.part-nav ul{
         flex-direction: row;
     }
 
-    #nav-container #nav #nav-drawer {
+    #nav-container #nav-section #nav-drawer {
         display: none;
     }
 
-    #nav-container #nav #nav-right.part-nav{
+    #nav-container #nav-section #nav-right.part-nav{
         background-color: transparent;
         width: initial;
         height: initial;
         position: initial;
         left: 0;
         top: 0;
-        z-index: 0;
+        z-index: -10;
     }
 
-    #nav-container #nav #nav-left.part-nav{
+    #nav-container #nav-section #nav-left.part-nav{
         margin-left: 10px;
     }
 }

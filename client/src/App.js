@@ -7,10 +7,9 @@ import Work from './PortfolioContainer/Work/Work';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Home />
-      <Work />
-      {/* <p>gola</p> */}
+      <Nav className="componente"/>
+      <Home className="componente"/>
+      <Work className="componente"/>
     </div>
   );
 }
