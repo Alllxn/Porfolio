@@ -25,10 +25,6 @@ class navContainer extends React.Component {
         }
     }
 
-    // navControl = () => {
-    //     console.log(document.getElementById("nav-right"));
-    // }
-
     render(){
         return (
             <nav id='nav-container'>
@@ -61,8 +57,8 @@ class navContainer extends React.Component {
                             </li>
                             <li>
                                 <a href='#home-section'>
-                                    <FontAwesomeIcon icon={faMessage} />
-                                    <span className='magic_underline'>Contact {this.props.className}</span>
+                                    <FontAwesomeIcon icon={faMessage}/>
+                                    <span className='magic_underline'>Contact</span>
                                 </a>
                             </li>
                         </ul>

@@ -22,7 +22,7 @@ class Work extends React.Component {
         const status = 'Next player: X';
 
         return (
-        <div>
+        <div id="work">
             <div className="status">{status}</div>
             <div className="board-row">
             {this.renderSquare(0)}
