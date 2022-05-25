@@ -4,7 +4,7 @@ import Nav from './PortfolioContainer/Nav/Nav';
 import Work from './PortfolioContainer/Work/Work';
 // import styled from 'styled-components'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Nav className="componente"/>

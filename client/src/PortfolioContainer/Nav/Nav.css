@@ -1,12 +1,10 @@
-.open-nav{
-    display: block !important;
-}
-
 #nav-container{
     background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    padding-top: 10px;
 }
 
 #nav-container:after{    
@@ -24,24 +22,22 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    /* height: 100px; */
     width: 100%;
     min-width: 300px;
     max-width: 2000px;
     margin: 0 auto;
-    /* padding: 0 10px; */
 }
 
 #nav-container #nav-section #nav-drawer {
     background-color: transparent;
     border: none;
     width: 75px;
-    /* height: 100%; */
+    height: 75px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 #nav-container #nav-section .part-nav{
@@ -50,11 +46,8 @@
 
 #nav-container #nav-section #nav-left.part-nav{
     width: 100%;
-    /* height: 100%; */
     max-width: fit-content;
-    margin: 10px 0 0 10px;
-    /* margin-left: 10px; */
-    /* flex-basis: 80%; */
+    margin: 0 0 0 10px;
 }
 
 #nav-container #nav-section #nav-left.part-nav #enlace-home{
@@ -81,16 +74,14 @@
 }
 
 #nav-container #nav-section #nav-right.part-nav{
-    /* margin-right: 10px; */
-    /* background: linear-gradient(to right, rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4)); */
     width: 100vh;
-    height: 100%;
-    display: none;
-    margin-right: 10px;
-    /* position: fixed; */
-    /* left: -250px; */
-    /* top: 100px; */
-    /* z-index: 1; */
+    /* height: 0px; */
+    /* margin-right: 10px; */
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    /* transition: 1s; */
+    position: relative;
 }
 
 #nav-container #nav-section #nav-right.part-nav ul{
@@ -98,7 +89,9 @@
     flex-direction: column;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 5px 32px 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 #nav-container #nav-section #nav-right.part-nav ul li{
@@ -107,6 +100,14 @@
     align-items: center;
     margin: 0 10px;
     font-size: 1.4rem;
+}
+
+#nav-container #nav-section #nav-right.part-nav ul li:not(:first-child){
+    margin: 7px 0;
+}
+
+#nav-container #nav-section #nav-right.part-nav ul li:first-child{
+    margin: 0 0 7px;
 }
 
 #nav-container #nav-section #nav-right.part-nav ul li > a{
@@ -129,36 +130,111 @@
     transition: 3s;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a > svg{
-    margin-right: 5px;
+#nav-container #nav-section #nav-right.part-nav ul li > a > span.icon-container{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 780px) {
     #nav-container #nav-section{
         justify-content: space-between;
     }
 
     #nav-container #nav-section #nav-right.part-nav ul{
         flex-direction: row;
-        /* height: 100%; */
+        margin: 0;
+        position: initial;
     }
 
     
     #nav-container #nav-section #nav-right.part-nav ul li{
         font-size: 1.3rem;
+        margin: 0 10px;
     }
 
-    #nav-container #nav-section #nav-drawer {
+    #nav-container #nav-section #nav-right.part-nav ul li:not(:first-child){
+        margin: 0 10px;
+    }
+
+    #nav-container #nav-section #nav-right.part-nav ul li:first-child{
+        margin: 0 10px;
+    }
+
+    #nav-container #nav-section #nav-drawer{
         display: none;
     }
 
     #nav-container #nav-section #nav-right.part-nav{
         display: block;
         width: fit-content;
-        /* height: 100px; */
+        height: 100%;
+        margin-right: 10px;
+    }
+    
+    #nav-container #nav-section #nav-right.part-nav ul li > a > span.icon-container{
+        margin-right: 5px;
+        width: initial;
+        height: initial;
+    }
+}
+
+@media only screen and (max-width: 779px) {
+    #nav-container{
+        --tamanio-nav: 220px;
     }
 
-    /* #nav-container #nav-section #nav-left.part-nav{
-        margin-left: 10px;
-    } */
+    .open-nav{
+        animation-name: open_nav_animation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition-timing-function: ease-in;
+    }
+    
+    @keyframes open_nav_animation {
+        0%{
+            display: block;
+            height: 0px;
+        }   
+        
+        100%{
+            height: var(--tamanio-nav);
+        }
+    }
+
+    .close-nav{
+        animation-name: close_nav_animation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition-timing-function: ease-in;
+    }
+    
+    @keyframes close_nav_animation {
+        0%{
+            height: var(--tamanio-nav);
+        }   
+        
+        100%{
+            height: 0px;
+            display: none;
+        }
+    }
+
+    
+    .actived-button-nav{
+        animation-name: actived_button_nav_animation;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes actived_button_nav_animation {
+        0%{
+            pointer-events:none;
+        }   
+        
+        100%{
+            pointer-events:auto;
+        }
+    }
 }

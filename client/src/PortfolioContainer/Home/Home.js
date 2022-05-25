@@ -12,7 +12,7 @@ export default function Home() {
                         <img src={me} alt='me' id='presentation-image'/>
                     </div>
                     <div id='presentation-content-text'>
-                        <h1>Hello, I'm Allan.</h1> 
+                        <h1>Hi, I'm Allan.</h1> 
                         <WritterLoop />
                         {/* <h2>I'm junior web developer and problem solver.</h2> */}
                     </div>
