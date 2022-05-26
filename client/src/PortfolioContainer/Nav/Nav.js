@@ -18,7 +18,6 @@ export default function NavContainer() {
             setNavState(true);
             nav.classList.add("open-nav");
             nav.classList.remove("close-nav");
-            // console.log(navi);
         }else{
             setNavState(false);
             nav.classList.add("close-nav");
@@ -41,7 +40,6 @@ export default function NavContainer() {
                             </div>
                         </a>
                     </div>
-                    {/* <div id='nav-right' className='part-nav'> */}
                     <div id='nav-right' className='part-nav'>
                         <ul>
                             <li>

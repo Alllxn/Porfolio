@@ -40,3 +40,9 @@
   50%{background-position:100% 19%}
   100%{background-position:0% 82%}
 }
+
+.componente{
+  height: 100vh;
+  min-height: 700px;
+  max-height: 914px;
+}

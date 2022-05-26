@@ -75,12 +75,8 @@
 
 #nav-container #nav-section #nav-right.part-nav{
     width: 100vh;
-    /* height: 0px; */
-    /* margin-right: 10px; */
-    /* display: none; */
     height: 0px;
     overflow: hidden;
-    /* transition: 1s; */
     position: relative;
 }
 
@@ -207,7 +203,7 @@
         animation-name: close_nav_animation;
         animation-duration: 1s;
         animation-fill-mode: forwards;
-        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
     }
     
     @keyframes close_nav_animation {
@@ -224,7 +220,7 @@
     
     .actived-button-nav{
         animation-name: actived_button_nav_animation;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
     }
 

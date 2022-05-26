@@ -5,19 +5,18 @@ import './Home.css';
 
 export default function Home() {
     return (
-        <div id='home-container'>
+        <header id='home-container' className='componente'>
             <div id='home-section'>
                 <div id='presentation-content'>
                     <div id='presentation-content-image'>
                         <img src={me} alt='me' id='presentation-image'/>
                     </div>
-                    <div id='presentation-content-text'>
+                    <hgroup id='presentation-content-text'>
                         <h1>Hi, I'm Allan.</h1> 
                         <WritterLoop />
-                        {/* <h2>I'm junior web developer and problem solver.</h2> */}
-                    </div>
+                    </hgroup>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
