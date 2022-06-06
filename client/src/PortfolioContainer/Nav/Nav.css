@@ -1,34 +1,31 @@
 #nav-container{
-    background: linear-gradient(rgba(5,7, 12, 0.8), rgba(5,7, 12, 0.6), rgba(5,7, 12, 0.4));
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 10px;
-}
-
-#nav-container:after{    
-    background: linear-gradient(rgba(5,7, 12, 0.4), rgba(5,7, 12, 0.25), rgba(5,7, 12, 0.05), rgba(5,7, 12, 0));
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: auto;
-    height: 50px;
-    z-index: 2;
-}
-
-#nav-container #nav-section{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
     width: 100%;
     min-width: 300px;
     max-width: 2000px;
     margin: 0 auto;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(5,7, 12, 0.9), rgba(5,7, 12, 0.7), rgba(5,7, 12, 0.45));
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
 }
 
-#nav-container #nav-section #nav-drawer {
+#nav-container:after{    
+    background: linear-gradient(rgba(5,7, 12, 0.45), rgba(5,7, 12, 0.25), rgba(5,7, 12, 0.05), rgba(5,7, 12, 0));
+    width: 100%;
+    content: "";
+    position:absolute;
+    bottom: -50px;
+    height: 50px;
+    z-index: 2;
+}
+
+#nav-container #nav-drawer {
     background-color: transparent;
     border: none;
     width: 75px;
@@ -40,47 +37,47 @@
     margin: 0 0 0 10px;
 }
 
-#nav-container #nav-section .part-nav{
+#nav-container .part-nav{
     height: 100px;
 }
 
-#nav-container #nav-section #nav-left.part-nav{
+#nav-container #nav-left.part-nav{
     width: 100%;
     max-width: fit-content;
     margin: 0 0 0 10px;
 }
 
-#nav-container #nav-section #nav-left.part-nav #enlace-home{
+#nav-container #nav-left.part-nav #enlace-home{
     display: flex;
     align-items: center;
     height: 100%;
     text-decoration: none;
 }
 
-#nav-container #nav-section #nav-left.part-nav #enlace-home #imagen-nav{
+#nav-container #nav-left.part-nav #enlace-home #imagen-nav{
     height: 55%;
     transition: transform 1s;
     margin-right: 5px;
 }
 
-#nav-container #nav-section #nav-left.part-nav:hover #enlace-home #imagen-nav{
+#nav-container #nav-left.part-nav:hover #enlace-home #imagen-nav{
     transform: rotate(360deg);
 }
 
-#nav-container #nav-section #nav-left.part-nav #enlace-home div p{
+#nav-container #nav-left.part-nav #enlace-home div p{
     margin: 0;
     color: white;
     font-size: 1.2rem;
 }
 
-#nav-container #nav-section #nav-right.part-nav{
+#nav-container #nav-right.part-nav{
     width: 100vh;
     height: 0px;
     overflow: hidden;
     position: relative;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul{
+#nav-container #nav-right.part-nav ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -90,7 +87,7 @@
     bottom: 10px;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li{
+#nav-container #nav-right.part-nav ul li{
     display: flex;
     height: 100%;
     align-items: center;
@@ -98,35 +95,36 @@
     font-size: 1.4rem;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li:not(:first-child){
+#nav-container #nav-right.part-nav ul li:not(:first-child){
     margin: 7px 0;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li:first-child{
+#nav-container #nav-right.part-nav ul li:first-child{
     margin: 0 0 7px;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a{
+#nav-container #nav-right.part-nav ul li > a{
     text-decoration: none;
     display: flex;
     align-items: center;
     color: white;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a span{
+#nav-container #nav-right.part-nav ul li > a span{
     position: relative;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a span::after{
+#nav-container #nav-right.part-nav ul li > a span::after{
     width: 0%;
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a:hover span:last-child::after{
+#nav-container #nav-right.part-nav ul li > a:hover span.magic_underline::after{
     width: 100%;
     transition: 3s;
+    /* background-color: red; */
 }
 
-#nav-container #nav-section #nav-right.part-nav ul li > a > span.icon-container{
+#nav-container #nav-right.part-nav ul li > a > span.icon-container{
     margin-right: 10px;
     width: 35px;
     height: 35px;
@@ -134,42 +132,43 @@
 }
 
 @media only screen and (min-width: 780px) {
-    #nav-container #nav-section{
+    #nav-container {
         justify-content: space-between;
     }
 
-    #nav-container #nav-section #nav-right.part-nav ul{
+    #nav-container #nav-right.part-nav ul{
         flex-direction: row;
         margin: 0;
         position: initial;
     }
 
     
-    #nav-container #nav-section #nav-right.part-nav ul li{
+    #nav-container #nav-right.part-nav ul li{
         font-size: 1.3rem;
         margin: 0 10px;
     }
 
-    #nav-container #nav-section #nav-right.part-nav ul li:not(:first-child){
+    #nav-container #nav-right.part-nav ul li:not(:first-child){
         margin: 0 10px;
     }
 
-    #nav-container #nav-section #nav-right.part-nav ul li:first-child{
+    #nav-container #nav-right.part-nav ul li:first-child{
         margin: 0 10px;
     }
 
-    #nav-container #nav-section #nav-drawer{
+    #nav-container #nav-drawer{
         display: none;
     }
 
-    #nav-container #nav-section #nav-right.part-nav{
+    #nav-container #nav-right.part-nav{
         display: block;
         width: fit-content;
         height: 100%;
         margin-right: 10px;
+        overflow: visible;
     }
     
-    #nav-container #nav-section #nav-right.part-nav ul li > a > span.icon-container{
+    #nav-container #nav-right.part-nav ul li > a > span.icon-container{
         margin-right: 5px;
         width: initial;
         height: initial;
@@ -183,7 +182,7 @@
 
     .open-nav{
         animation-name: open_nav_animation;
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         animation-fill-mode: forwards;
         transition-timing-function: ease-in;
     }
@@ -201,7 +200,7 @@
 
     .close-nav{
         animation-name: close_nav_animation;
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         animation-fill-mode: forwards;
         transition-timing-function: ease-out;
     }
@@ -218,13 +217,13 @@
     }
 
     
-    .actived-button-nav{
-        animation-name: actived_button_nav_animation;
-        animation-duration: 1s;
+    .disable-button-nav{
+        animation-name: disable_button_nav;
+        animation-duration: 5.5s;
         animation-fill-mode: forwards;
     }
 
-    @keyframes actived_button_nav_animation {
+    @keyframes disable_button_nav {
         0%{
             pointer-events:none;
         }   
@@ -233,4 +232,20 @@
             pointer-events:auto;
         }
     }
+
+    /* .desactived-button-nav{
+        animation-name: desactived_button_nav_animation;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes desactived_button_nav_animation {
+        0%{
+            pointer-events:none;
+        }   
+        
+        100%{
+            pointer-events:auto;
+        }
+    } */
 }

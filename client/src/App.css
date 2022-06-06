@@ -42,7 +42,8 @@
 }
 
 .componente{
-  height: 100vh;
-  min-height: 700px;
-  max-height: 914px;
+  /* height: fit-content; */
+  min-height: 100vh;
+  /* max-height: fit-content; */
+  padding: 160px 20px;
 }
