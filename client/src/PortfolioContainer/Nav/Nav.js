@@ -46,25 +46,25 @@ export default function NavContainer() {
                     <li onClick={navControl}>
                         <a href='#home-container'>
                             <span className='icon-container'><FontAwesomeIcon icon={faHouseUser} size='lg' /></span>
-                            <span className='magic_underline'>Home</span>
+                            <span className='magic-underline'>Home</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#about-container'>
                             <span className='icon-container'><FontAwesomeIcon icon={faCrown} size='lg' /></span>
-                            <span className='magic_underline'>About me</span>
+                            <span className='magic-underline'>About me</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#work'>
                             <span className='icon-container'><FontAwesomeIcon icon={faHistory} size='lg' /></span>
-                            <span className='magic_underline'>Work</span>
+                            <span className='magic-underline'>Work</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#home-section'>
                             <span className='icon-container'><FontAwesomeIcon icon={faMessage} size='lg' /></span>
-                            <span className='magic_underline'>Contact</span>
+                            <span className='magic-underline'>Contact</span>
                         </a>
                     </li>
                 </ul>

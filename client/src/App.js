@@ -7,12 +7,12 @@ import Work from './PortfolioContainer/Work/Work';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Nav/>
       <Home/>
       <main>
         <About/>
-        <Work/>
+        {/* <Work/> */}
       </main>
     </div>
   );

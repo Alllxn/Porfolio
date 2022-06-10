@@ -1,0 +1,46 @@
+#about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container #about-presentation{
+    display: flex; 
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about-container #about-presentation > h2{
+    max-width: fit-content;
+    margin-bottom: 30px;
+}
+
+#about-container #about-presentation > h2{
+    margin-bottom: 30px;
+}
+
+#about-container #about-presentation > #presentation-control{
+    border-radius: 100px;
+    background-color: transparent;
+    padding: 5px 15px;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#about-container #about-presentation > #presentation-control svg{
+    margin-right: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.open-presentation{
+    display: block;
+}

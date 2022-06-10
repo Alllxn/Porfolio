@@ -8,11 +8,11 @@ export default function Home() {
         <header id='home-container' className='componente'>
             <div id='home-section'>
                 <div id='presentation-content'>
-                    <div id='presentation-content-image'>
+                    <div id='presentation-content-image' className='magic-background'>
                         <img src={me} alt='me' id='presentation-image'/>
                     </div>
                     <hgroup id='presentation-content-text'>
-                        <h1>Hi, I'm Allan.</h1> 
+                        <h1 className='magic-background-underline'>Hi, I'm Allan.</h1> 
                         <WritterLoop />
                     </hgroup>
                 </div>

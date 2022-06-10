@@ -1,7 +1,6 @@
 #nav-container{
     width: 100%;
-    min-width: 300px;
-    max-width: 2000px;
+    /* max-width: fit-content; */
     margin: 0 auto;
     padding-top: 10px;
     position: fixed;
@@ -19,7 +18,7 @@
     background: linear-gradient(rgba(5,7, 12, 0.45), rgba(5,7, 12, 0.25), rgba(5,7, 12, 0.05), rgba(5,7, 12, 0));
     width: 100%;
     content: "";
-    position:absolute;
+    position: absolute;
     bottom: -50px;
     height: 50px;
     z-index: 2;
@@ -112,16 +111,6 @@
 
 #nav-container #nav-right.part-nav ul li > a span{
     position: relative;
-}
-
-#nav-container #nav-right.part-nav ul li > a span::after{
-    width: 0%;
-}
-
-#nav-container #nav-right.part-nav ul li > a:hover span.magic_underline::after{
-    width: 100%;
-    transition: 3s;
-    /* background-color: red; */
 }
 
 #nav-container #nav-right.part-nav ul li > a > span.icon-container{
@@ -232,20 +221,4 @@
             pointer-events:auto;
         }
     }
-
-    /* .desactived-button-nav{
-        animation-name: desactived_button_nav_animation;
-        animation-duration: 2.5s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes desactived_button_nav_animation {
-        0%{
-            pointer-events:none;
-        }   
-        
-        100%{
-            pointer-events:auto;
-        }
-    } */
 }

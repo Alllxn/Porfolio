@@ -19,20 +19,33 @@
   --loader-color: #0CBFAE
 }
 
-.magic_underline{
-  position: relative;
+
+html {
+  scroll-behavior: smooth;
 }
 
-.magic_underline::after{
-  content: "";
-  height: 5px;
-  background: linear-gradient(125deg, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d);
-  background-size: 1800% 1800%;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 1s;
-  animation: rainbow 4s ease infinite;
+#App{
+  height: 100vh;
+  /* min-height: 60vh;  
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;  */
+}
+
+main{
+  height: 100%;
+}
+
+/* width */
+/* #App::-webkit-scrollbar {
+  width: 0 !important;
+} */
+
+.componente{
+  padding: 160px 20px;
+  min-width: 300px;
+  /* scroll-snap-align: start; */
+  height: 100%;
+  min-height: 640px;  
 }
 
 @keyframes rainbow { 
@@ -41,9 +54,51 @@
   100%{background-position:0% 82%}
 }
 
-.componente{
-  /* height: fit-content; */
-  min-height: 100vh;
-  /* max-height: fit-content; */
-  padding: 160px 20px;
+/* ============================================================ */
+/* ----- El magic underline es para links con evento hover -----*/
+/* ============================================================ */
+.magic-underline{
+  position: relative;
+}
+
+a:hover > .magic-underline::after{
+  width: 100%;
+  transition: 1s;
+}
+
+.magic-underline::after{
+  width: 0%;
+  content: "";
+  height: 5px;
+  background: linear-gradient(125deg, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400, #e81d1d, #e8b71d, #e3e81d);
+  background-size: 1800% 1800%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 1s;
+  animation: rainbow 4s ease-in-out infinite;
+}
+
+/* ============================================================== */
+/* El magic background es para animar el bg de elementos sin eventos */
+/* ============================================================== */
+.magic-background,
+.magic-background-underline::after{
+  background: linear-gradient(125deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 5000px 5000px;
+  animation: rainbow 18s ease infinite;
+}
+
+.magic-background-underline::after{
+  width: 100%;
+  content: "";
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+.magic-background,
+.magic-background-underline{
+  position: relative;
 }
