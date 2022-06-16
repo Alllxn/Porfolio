@@ -6,17 +6,31 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
     const [presentationState, setPresentationState] = useState(false);
+    const ah = [1, 2, 3]
     
     const presentationControl = () => {
         const presentation = document.getElementById("presentation-text");
-        // const presentationButton = document.getElementById("presentation-control");
+        window.location.href = '#about-container';
         
         if (presentationState === false) {
             setPresentationState(true); //change div state to true = open
             presentation.classList.add("open-presentation"); //and add the animation that opens the text
+            // presentation.classList.remove("close-presentation");
+            presentation.childNodes.forEach(
+                function(value, index) {
+                    value.classList.add("paragraph-animation");
+                }
+            );
         } else {
             setPresentationState(false);
+            // presentation.classList.add("close-presentation");
             presentation.classList.remove("open-presentation");
+            
+            presentation.childNodes.forEach(
+                function(value, index) {
+                    value.classList.remove("paragraph-animation");
+                }
+            );
         }
     }
 
@@ -28,7 +42,7 @@ export default function About() {
                     Hello, my name is <b>Allan Bastian Espinoza Ibáñez</b>, a 90's child born in Valparaiso, Viña del Mar in Chile 
                     and raised in Gran Canaria, Spain. 
                 </h3>
-                <div id='presentation-text' className='hidden'>
+                <div id='presentation-text'>
                     <p>
                         Since I can remember, I have been a curious person about everything related to the world of tech.
                         This has made me a multidisciplinary and organized person.

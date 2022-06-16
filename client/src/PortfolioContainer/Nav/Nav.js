@@ -29,12 +29,12 @@ export default function NavContainer() {
 
     return (
         <nav id='nav-container'>
-            <button onClick={navControl} id='nav-drawer' className='part-nav'>
-                <FontAwesomeIcon icon={!navState ? faBars : faXmark} size='2x' />
+            <button onClick={navControl} id='nav-drawer' className={!navState ? "part-nav" : "part-nav button-pressed"} >
+                <FontAwesomeIcon icon={!navState ? faBars : faXmark}/>
             </button>
             <div id='nav-left' className='part-nav'>
                 <a href='.' id='enlace-home'>
-                    <img id='imagen-nav' src={extraterrestre} alt='alien-cabecera'></img>
+                    <img id='imagen-nav' src={extraterrestre} alt='alien-cabecera' width='40'></img>
                     <div>
                         <p>Allan Espinoza</p>
                         <p>Web Developer</p>

@@ -5,17 +5,15 @@ import './Home.css';
 
 export default function Home() {
     return (
-        <header id='home-container' className='componente'>
-            <div id='home-section'>
-                <div id='presentation-content'>
-                    <div id='presentation-content-image' className='magic-background'>
-                        <img src={me} alt='me' id='presentation-image'/>
-                    </div>
-                    <hgroup id='presentation-content-text'>
-                        <h1 className='magic-background-underline'>Hi, I'm Allan.</h1> 
-                        <WritterLoop />
-                    </hgroup>
+        <header>
+            <div id='home-container' className='componente'>
+                <div id='presentation-content-image' className='home-part magic-background'>
+                    <img src={me} alt='me' id='presentation-image' width="200"/>
                 </div>
+                <hgroup id='presentation-content-text' className='home-part'>
+                    <h1 className='magic-background-underline'>Allan Bastian Espinoza Ibañez</h1> 
+                    <WritterLoop />
+                </hgroup>
             </div>
         </header>
     )

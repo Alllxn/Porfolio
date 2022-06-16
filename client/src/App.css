@@ -26,26 +26,28 @@ html {
 
 #App{
   height: 100vh;
-  /* min-height: 60vh;  
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;  */
 }
 
+header,
 main{
-  height: 100%;
+  height: fit-content;
 }
-
-/* width */
-/* #App::-webkit-scrollbar {
-  width: 0 !important;
-} */
 
 .componente{
-  padding: 160px 20px;
+  padding: 110px 20px;
   min-width: 300px;
-  /* scroll-snap-align: start; */
-  height: 100%;
-  min-height: 640px;  
+  max-width: 3000px;
+  min-height: 100vh;  
+  max-height: 2000px;
+}
+
+.button-pressed{
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 18px 0px rgba(0,0,0,0.75);
+  
+
 }
 
 @keyframes rainbow { 
