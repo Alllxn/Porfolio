@@ -36,12 +36,12 @@ export default function About() {
 
     return (
         <section id='about-container' className='componente'>
+            <h3 className='magic-background-underline'>Me, Mysefl & I</h3>
             <article id='about-presentation'>
-                <h2 className='magic-background-underline'>Me, Mysefl & I</h2>
-                <h3>
+                <p className="presentation-title">
                     Hello, my name is <b>Allan Bastian Espinoza Ibáñez</b>, a 90's child born in Valparaiso, Viña del Mar in Chile 
                     and raised in Gran Canaria, Spain. 
-                </h3>
+                </p>
                 <div id='presentation-text'>
                     <p>
                         Since I can remember, I have been a curious person about everything related to the world of tech.

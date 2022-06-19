@@ -15,7 +15,7 @@ export default function NavContainer() {
     const navControl = () => {
         const nav = document.getElementById("nav-right");
         const button_nav = document.getElementById("nav-drawer");
-        console.log(button_nav.animation);
+        // console.log(button_nav.animation);
         if (navState === false) {
             setNavState(true); //change nav state to true = open
             nav.classList.remove("close-nav"); //remove the animation that closes the nav
@@ -52,17 +52,17 @@ export default function NavContainer() {
                     <li onClick={navControl}>
                         <a href='#about-container'>
                             <span className='icon-container'><FontAwesomeIcon icon={faCrown} size='lg' /></span>
-                            <span className='magic-underline'>About me</span>
+                            <span className='magic-underline'>About</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
-                        <a href='#work'>
+                        <a href='#work-container'>
                             <span className='icon-container'><FontAwesomeIcon icon={faHistory} size='lg' /></span>
                             <span className='magic-underline'>Work</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
-                        <a href='#home-section'>
+                        <a href='#home-container'>
                             <span className='icon-container'><FontAwesomeIcon icon={faMessage} size='lg' /></span>
                             <span className='magic-underline'>Contact</span>
                         </a>

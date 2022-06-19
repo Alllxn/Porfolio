@@ -12,7 +12,7 @@ const App = () => {
       <Home/>
       <main>
         <About/>
-        {/* <Work/> */}
+        <Work/>
       </main>
     </div>
   );

@@ -1,47 +1,21 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import './Work.css';
+import Projects from './Projects/Projects';
+import myData from './Projects/Projects.json';
 
-class Square extends React.Component {
-    render() {
-        return (
-        <button className="square">
-            {/* TODO */}
-        </button>
+export default function Work(){
+    const project = myData.Projects.map(function(object,i){
+        return(
+            <Projects project={object} key={i}/>
         );
-    }
-}
+    });
 
-
-class Work extends React.Component {
-    renderSquare(i) {
-        return <Square />;
-    }
-
-    render() {
-        const status = 'Next player: X';
-
-        return (
-        <div id="work">
-            <div className="status">{status}</div>
-            <div className="board-row">
-            {this.renderSquare(0)}
-            {this.renderSquare(1)}
-            {this.renderSquare(2)}
-            </div>
-            <div className="board-row">
-            {this.renderSquare(3)}
-            {this.renderSquare(4)}
-            {this.renderSquare(5)}
-            </div>
-            <div className="board-row">
-            {this.renderSquare(6)}
-            {this.renderSquare(7)}
-            {this.renderSquare(8)}
-            </div>
-        </div>
-        );
-    }
-}
-
-export default Work;
+    return(
+        <section id="work-container" className="componente">
+            <h3 className='magic-background-underline'>Work</h3>
+            <ol id="work-wrap">
+                {project}
+            </ol>
+        </section>
+    );
+};

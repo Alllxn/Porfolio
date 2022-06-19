@@ -1,0 +1,99 @@
+{
+    "Projects" : [
+        {
+            "Name" : "Grupo MBC",
+            "Type" : "Moodle",
+            "Year" : "2020",
+            "Image" : "/grupombc.png",
+            "Tecnologies" : [
+                "CMS Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports.",
+                "Can't show more because it don't have guests access"
+            ],
+            "Links" : [
+                "https://grupombc.info/",
+                "https://a1.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Escuela de Hostelería de Las Palmas",
+            "Type" : "Moodle",
+            "Year" : "2020",
+            "Image" : "/ehlp.png",
+            "Tecnologies" : [
+                "CMS Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports.",
+                "Can't show more because it don't have guests access."
+            ],
+            "Links" : [
+                "https://www.escueladehostelerialp.com/",
+                "https://a2.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Escuela Superior de Hostelería de Canarias (Tenerife)",
+            "Type" : "Moodle",
+            "Year" : "2020",
+            "Image" : "/eshc.png",
+            "Tecnologies" : [
+                "CMS Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports.",
+                "Can't show more because it don't have guests access."
+            ],
+            "Links" : [
+                "https://www.escuelahosteleriacanarias.com/",
+                "https://a3.grupombc.info/"
+            ]
+        },
+        {
+            "Name" : "Especializa2",
+            "Type" : "Moodle",
+            "Year" : "2021",
+            "Image" : "/especializa2.png",
+            "Tecnologies" : [
+                "CMS Moodle",
+                "PHP", 
+                "Mustache",
+                "Javascript", 
+                "AJAX",
+                "MySQL"
+            ],
+            "Notes" : [
+                "Thay Moodle is made for private courses.",
+                "I made the designs and animations effects.",
+                "Created virtual classroom, using canvas and JS",
+                "Made custom blocks and modules.",
+                "Used PDF libraries to make reports.",
+                "Can't show more because it don't have guests access."
+            ],
+            "Links" : [
+                "https://especializa2.com/",
+                "https://aula.especializa2.com/"
+            ]
+        }
+    ]
+}

@@ -34,11 +34,10 @@ main{
 }
 
 .componente{
-  padding: 110px 20px;
+  padding: 110px 10%;
   min-width: 300px;
   max-width: 3000px;
   min-height: 100vh;  
-  max-height: 2000px;
 }
 
 .button-pressed{
@@ -89,6 +88,12 @@ a:hover > .magic-underline::after{
   background: linear-gradient(125deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 5000px 5000px;
   animation: rainbow 18s ease infinite;
+}
+
+.magic-background-underline{
+  align-self: flex-start;
+  max-width: fit-content;
+  margin-bottom: 30px;
 }
 
 .magic-background-underline::after{

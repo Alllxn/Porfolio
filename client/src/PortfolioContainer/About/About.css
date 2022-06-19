@@ -2,30 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #about-container #about-presentation{
     display: flex; 
     flex-direction: column;
-    max-width: 700px;
-    margin: 0 auto;
+    justify-content: flex-start;
 }
 
-#about-container #about-presentation > h2{
-    max-width: fit-content;
-    margin-bottom: 30px;
+#about-container #about-presentation .presentation-title{
+    font-size: 1.2rem;
 }
 
-#about-container #about-presentation #presentation-text{
-    /* height: 0px;
+#about-container #about-presentation #presentation-text{    
+    overflow: hidden;
     opacity: 0;
-    display: none;
-    overflow: hidden; */
-    
-  overflow: hidden;
-  opacity: 0;
-  max-height: 0;
-  transition: all 1s;
+    max-height: 0;
+    transition: all 1s;
 }
 
 #about-container #about-presentation > #presentation-control{
@@ -47,7 +41,7 @@
 .open-presentation{
     max-height: 1500px !important;
     opacity: 1 !important;
-    transition: max-height 2s, opacity 0.5s 0.5s !important;
+    transition: max-height 3s, opacity 0.5s 0.5s ease-out !important;
 }
 
 .paragraph-animation:nth-child(2) {
