@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f699466d.css",
-    "main.js": "/portfolio/static/js/main.2e45f4fc.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/portfolio/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/eshc.png": "/portfolio/static/media/eshc.01e142215c9bef6bb0c3.png",
-    "static/media/grupombc.png": "/portfolio/static/media/grupombc.c56d545bfcd0ee6a8125.png",
-    "static/media/especializa2.png": "/portfolio/static/media/especializa2.4ed496bd54d8d21fb492.png",
-    "static/media/ehlp.png": "/portfolio/static/media/ehlp.f6695f687e7cb6839d68.png",
-    "static/media/background-home.jpg": "/portfolio/static/media/background-home.6d362dc8f0c6eaed86e2.jpg",
-    "static/media/me.png": "/portfolio/static/media/me.7ef32ee5f5f3e3ebf6bb.png",
-    "static/media/Poppins-Thin.ttf": "/portfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
-    "static/media/Poppins-Light.ttf": "/portfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/portfolio/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/portfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
-    "static/media/extraterrestre.png": "/portfolio/static/media/extraterrestre.07fa4f2fe78386c072ee.png",
-    "index.html": "/portfolio/index.html",
-    "main.f699466d.css.map": "/portfolio/static/css/main.f699466d.css.map",
-    "main.2e45f4fc.js.map": "/portfolio/static/js/main.2e45f4fc.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/Porfolio/static/css/main.a3649c37.css",
+    "main.js": "/Porfolio/static/js/main.277e065f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Porfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/eshc.png": "/Porfolio/static/media/eshc.01e142215c9bef6bb0c3.png",
+    "static/media/grupombc.png": "/Porfolio/static/media/grupombc.c56d545bfcd0ee6a8125.png",
+    "static/media/especializa2.png": "/Porfolio/static/media/especializa2.4ed496bd54d8d21fb492.png",
+    "static/media/ehlp.png": "/Porfolio/static/media/ehlp.f6695f687e7cb6839d68.png",
+    "static/media/background-home.jpg": "/Porfolio/static/media/background-home.6d362dc8f0c6eaed86e2.jpg",
+    "static/media/me.png": "/Porfolio/static/media/me.7ef32ee5f5f3e3ebf6bb.png",
+    "static/media/Poppins-Thin.ttf": "/Porfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
+    "static/media/Poppins-Light.ttf": "/Porfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
+    "static/media/Poppins-Regular.ttf": "/Porfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/Porfolio/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/Porfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/Poppins-Bold.ttf": "/Porfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/Porfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "static/media/extraterrestre.png": "/Porfolio/static/media/extraterrestre.07fa4f2fe78386c072ee.png",
+    "index.html": "/Porfolio/index.html",
+    "main.a3649c37.css.map": "/Porfolio/static/css/main.a3649c37.css.map",
+    "main.277e065f.js.map": "/Porfolio/static/js/main.277e065f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Porfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f699466d.css",
-    "static/js/main.2e45f4fc.js"
+    "static/css/main.a3649c37.css",
+    "static/js/main.277e065f.js"
   ]
 }
