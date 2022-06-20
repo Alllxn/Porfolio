@@ -6,8 +6,7 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
     const [presentationState, setPresentationState] = useState(false);
-    const ah = [1, 2, 3]
-    
+        
     const presentationControl = () => {
         const presentation = document.getElementById("presentation-text");
         window.location.href = '#about-container';

@@ -2,11 +2,13 @@
     "Projects" : [
         {
             "Name" : "Grupo MBC",
-            "Type" : "Moodle",
+            "Type" : "CMS",
             "Year" : "2020",
+            "Description" : "CMS for a formation center with Moodle",
+            "Color" : "#2a2658",
             "Image" : "/grupombc.png",
             "Tecnologies" : [
-                "CMS Moodle",
+                "Moodle",
                 "PHP", 
                 "Mustache",
                 "Javascript", 
@@ -25,11 +27,13 @@
         },
         {
             "Name" : "Escuela de Hostelería de Las Palmas",
-            "Type" : "Moodle",
+            "Type" : "CMS",
             "Year" : "2020",
+            "Description" : "CMS for a school of hostelry with Moodle",
+            "Color" : "#a21c26",
             "Image" : "/ehlp.png",
             "Tecnologies" : [
-                "CMS Moodle",
+                "Moodle",
                 "PHP", 
                 "Mustache",
                 "Javascript", 
@@ -47,12 +51,14 @@
             ]
         },
         {
-            "Name" : "Escuela Superior de Hostelería de Canarias (Tenerife)",
-            "Type" : "Moodle",
+            "Name" : "Escuela Superior de Hostelería de Canarias",
+            "Type" : "CMS",
             "Year" : "2020",
+            "Description" : "CMS for a school of hostelry of the canary islands with Moodle",
+            "Color" : "#003944",
             "Image" : "/eshc.png",
             "Tecnologies" : [
-                "CMS Moodle",
+                "Moodle",
                 "PHP", 
                 "Mustache",
                 "Javascript", 
@@ -71,11 +77,13 @@
         },
         {
             "Name" : "Especializa2",
-            "Type" : "Moodle",
+            "Type" : "CMS",
             "Year" : "2021",
+            "Description" : "CMS for a private formation center with Moodle",
+            "Color" : "#00a6c2",
             "Image" : "/especializa2.png",
             "Tecnologies" : [
-                "CMS Moodle",
+                "Moodle",
                 "PHP", 
                 "Mustache",
                 "Javascript", 

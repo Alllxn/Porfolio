@@ -109,3 +109,16 @@ a:hover > .magic-underline::after{
 .magic-background-underline{
   position: relative;
 }
+
+.project-container article.project-card .project-information .project-type{
+  background-color: grey;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .componente{
+    padding: 110px 5%;
+  }
+}

@@ -14,8 +14,7 @@ export default function NavContainer() {
 
     const navControl = () => {
         const nav = document.getElementById("nav-right");
-        const button_nav = document.getElementById("nav-drawer");
-        // console.log(button_nav.animation);
+        
         if (navState === false) {
             setNavState(true); //change nav state to true = open
             nav.classList.remove("close-nav"); //remove the animation that closes the nav
