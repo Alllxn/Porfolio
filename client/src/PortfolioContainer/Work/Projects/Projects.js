@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import glamorous, { withTheme } from 'glamorous';
+import glamorous from 'glamorous';
 
 export default function Projects(props){
     const project = props.project;

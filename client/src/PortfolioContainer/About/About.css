@@ -9,6 +9,7 @@
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 500px;
 }
 
 #about-container #about-presentation .presentation-title{
