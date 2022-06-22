@@ -9,15 +9,11 @@ export default class WritterLoop extends React.Component { //
             <Typical
                 loop={Infinity}
                 steps={[
-                    "An ethusiastic developer👽",
-                    1000,
-                    "Full Stack Developer🌍",
-                    1000,
-                    "Front End Developer👾",
+                    "Web developer👽",
                     1000, 
-                    "Back End Developer⚙️",
+                    "Web Designer🎨",
                     1000,
-                    "The curiosity personified🍀",
+                    "Curiosity personified🍀",
                     1000,
                     "Problem solver🚀",
                     1000 

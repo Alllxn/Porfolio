@@ -24,7 +24,7 @@
 }
 
 .project-container:hover article.project-card{
-  transform: scale(1.2,1.2);
+  transform: scale(1.15,1.15);
   z-index:8
 }
 
@@ -112,10 +112,6 @@
   border-radius: 5px;
   color:whitesmoke;
   margin: 0 5px 5px 0;
-}
-
-.project-container article.project-card .project-information .project-tech:last-child{
-  /* padding-bottom: 10px; */
 }
 
 .techs-wrap{

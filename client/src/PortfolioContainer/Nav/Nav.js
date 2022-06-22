@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import './Nav.css';
 import extraterrestre from '../../assets/home/extraterrestre.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseUser } from '@fortawesome/free-solid-svg-icons';
-import { faHistory } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faMessage } from '@fortawesome/free-solid-svg-icons';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCrown } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavContainer() {
     const [navState, setNavState] = useState(false);
@@ -29,7 +23,7 @@ export default function NavContainer() {
     return (
         <nav id='nav-container'>
             <button onClick={navControl} id='nav-drawer' className={!navState ? "part-nav" : "part-nav button-pressed"} >
-                <FontAwesomeIcon icon={!navState ? faBars : faXmark}/>
+                <FontAwesomeIcon icon={!navState ? "fa-solid fa-bars" : "fa-solid fa-xmark"}/>
             </button>
             <div id='nav-left' className='part-nav'>
                 <a href='.' id='enlace-home'>
@@ -44,25 +38,36 @@ export default function NavContainer() {
                 <ul>
                     <li onClick={navControl}>
                         <a href='#home-container'>
-                            <span className='icon-container'><FontAwesomeIcon icon={faHouseUser} size='lg' /></span>
+                            <span className='icon-container'>
+                                <FontAwesomeIcon icon="fa-solid fa-house-chimney" size='lg'/>
+                            </span>
                             <span className='magic-underline'>Home</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#about-container'>
-                            <span className='icon-container'><FontAwesomeIcon icon={faCrown} size='lg' /></span>
+                            <span className='icon-container'>
+                                {/* <FontAwesomeIcon icon={faCrown} size='lg' /> */}
+                                <FontAwesomeIcon icon="fa-solid fa-address-card" size='lg'/>
+                            </span>
                             <span className='magic-underline'>About</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#work-container'>
-                            <span className='icon-container'><FontAwesomeIcon icon={faHistory} size='lg' /></span>
+                            <span className='icon-container'>
+                                {/* <FontAwesomeIcon icon={faHistory} size='lg' /> */}
+                                <FontAwesomeIcon icon="fa-solid fa-history" size='lg'/>
+                            </span>
                             <span className='magic-underline'>Work</span>
                         </a>
                     </li>
                     <li onClick={navControl}>
                         <a href='#home-container'>
-                            <span className='icon-container'><FontAwesomeIcon icon={faMessage} size='lg' /></span>
+                            <span className='icon-container'>
+                                {/* <FontAwesomeIcon icon={faMessage} size='lg' /> */}
+                                <FontAwesomeIcon icon="fa-solid fa-comments" size='lg'/>
+                            </span>
                             <span className='magic-underline'>Contact</span>
                         </a>
                     </li>
