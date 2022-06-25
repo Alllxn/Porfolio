@@ -9,38 +9,65 @@ export function Home() {
         <header>
             <div id='home-container' className='componente'>
                 <div id="presentation-content">
-                    <div id='presentation-content-image' className='home-part magic-background'>
-                        <img src={me} alt='me' id='presentation-image' width="200"/>
+                    <div id='presentation-content-image'>
+                        <img src={me} alt='me' id='presentation-image' className="magic-background" width="250"/>
                     </div>
                     <div id='presentation-content-text'>
-                        <hgroup className='home-part'>
+                        <hgroup>
                             <h1 className='magic-background-underline'>Allan Bastian Espinoza Ibañez</h1> 
                             <WritterLoop />
                         </hgroup>
+                        <ul id="home-media-links">
+                            <li>
+                                <a href="https://github.com/Alllxn" rel="nofollow noopener noreferrer" target="_blank">
+                                    <FontAwesomeIcon icon="fa-brands fa-github-square"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/allanEspinozaIba%C3%B1ez/" rel="nofollow noopener noreferrer" target="_blank">
+                                    <FontAwesomeIcon icon="fa-brands fa-linkedin"/>
+                                </a>
+                            </li>
+                            {/* <li>
+                                <a href="">
+                                    <FontAwesomeIcon icon="fa-brands fa-instagram-square"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <FontAwesomeIcon icon="fa-brands fa-twitter-square"/>
+                                </a>
+                            </li> */}
+                            <li>
+                                <a href="tel:+34615460628">
+                                    <FontAwesomeIcon icon="fa-solid fa-square-phone" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:allan.esib@gmail.com">
+                                    <FontAwesomeIcon icon="fa-solids fa-envelope-square"/>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div id="presentation-cta">
-                    <ul id="home-media-links">
-                        <li>
-                            <FontAwesomeIcon icon="fa-brands fa-github-square" size='2x'/>
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon="fa-brands fa-linkedin" size='2x'/>
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon="fa-brands fa-instagram-square" size='2x'/>
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon="fa-brands fa-twitter-square" size='2x'/>
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon="fa-brands fa-whatsapp-square" size='2x'/>
-                        </li>
-                    </ul>
-                    <div id="home-actions">
-                        <button id="button-resume" className="button-home-actions">Resume</button>
-                        <button id="button-hire-me" className="button-home-actions">Hire me</button>
-                    </div>
+                    <button id="button-resume" className="button-home-actions">
+                        <span>
+                            📂
+                        </span>
+                        <span>
+                            Resume
+                        </span>     
+                    </button>
+                    <button id="button-hire-me" className="button-home-actions">
+                        <span>
+                            🔥
+                        </span>
+                        <span>
+                            Hire me
+                        </span>    
+                    </button>
                 </div>
             </div>
         </header>

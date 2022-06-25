@@ -9,11 +9,15 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faSquarePhone } from '@fortawesome/free-solid-svg-icons';
 
 
 library.add(
-    faWhatsappSquare,
+    faSquarePhone,
+    faFile,
+    faEnvelopeSquare,
     faGithubSquare,
     faTwitterSquare,
     faInstagramSquare,
