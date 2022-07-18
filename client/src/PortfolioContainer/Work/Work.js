@@ -11,7 +11,7 @@ export default function Work(){
     });
 
     return(
-        <section id="work-container" className="componente">
+        <section id="work-container" className="component">
             <h3 className='magic-background-underline'>Work</h3>
             <ol id="work-wrap">
                 {project}

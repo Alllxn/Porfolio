@@ -7,7 +7,7 @@ import './Home.css';
 export function Home() {
     return (
         <header>
-            <div id='home-container' className='componente'>
+            <div id='home-container' className='component'>
                 <div id="presentation-content">
                     <div id='presentation-content-image'>
                         <img src={me} alt='me' id='presentation-image' className="magic-background" width="250"/>
@@ -52,16 +52,16 @@ export function Home() {
                     </div>
                 </div>
                 <div id="presentation-cta">
-                    <button id="button-resume" className="button-home-actions">
-                        <span>
+                    <button id="button-resume" className="button-home-actions" onClick={console.log('ok')}>
+                        <span className="magic-background">
                             📂
                         </span>
                         <span>
                             Resume
                         </span>     
                     </button>
-                    <button id="button-hire-me" className="button-home-actions">
-                        <span>
+                    <button id="button-hire-me" className="button-home-actions" onClick={() => window.location.href = '#contact-container'}>
+                        <span className="magic-background">
                             🔥
                         </span>
                         <span>

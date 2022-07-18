@@ -34,7 +34,7 @@ export default function About() {
     }
 
     return (
-        <section id='about-container' className='componente'>
+        <section id='about-container' className='component'>
             <h3 className='magic-background-underline'>Me, Mysefl & I</h3>
             <article id='about-presentation'>
                 <p className="presentation-title">

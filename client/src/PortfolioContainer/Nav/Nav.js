@@ -63,7 +63,7 @@ export default function NavContainer() {
                         </a>
                     </li>
                     <li onClick={navControl}>
-                        <a href='#home-container'>
+                        <a href='#contact-container'>
                             <span className='icon-container'>
                                 {/* <FontAwesomeIcon icon={faMessage} size='lg' /> */}
                                 <FontAwesomeIcon icon="fa-solid fa-comments" size='lg'/>
